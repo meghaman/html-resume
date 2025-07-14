@@ -294,7 +294,7 @@ li{
 }
 
 /****** customize list symbol style ******/
-#main li::before{
+#main li::before, .bulleted-list li::before{
   position: relative;
   margin-left: -4.25pt;
   content: '• ';
