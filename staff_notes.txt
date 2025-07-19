@@ -1,0 +1,35 @@
+Architecture & System Design
+What were the core components of the platform? (e.g. services, data pipelines, frontend/backend separation)
+The backend was a dockerized web server written in Python. The web server managed user sign-up, login and modification. It also managed all integration with third-parties such as Hubspot, SendGrid and SnapTrade. It also provided the front-end with the endpoints for the behavioral analytics and investing workflow applications. We used Firebase as a database to store user data and analytics. The backend also provided a REST API for the frontend to interact with.
+The front end was a dockerized React website. The website was written in Typescript. It provided a user interface for users to sign up, log in view behavioral analytics and the investing workflow application. It also provided a user interface for users to manage their account settings and preferences. The investing workflow application was a web-based application that guided users through the process of making investment decisions.
+
+How did the system scale technically? (e.g. multi-tenant architecture, horizontal scaling, caching strategies, etc.)
+The backend and frontend were both containerized using Docker, allowing for easy deployment and scaling. The system was designed to be horizontally scalable, with load balancers distributing traffic across multiple instances of the backend and frontend services. Due to the length of time a it would take to process behavioral analytics, I implemented RTK query to cache the results of the analytics queries on the frontend, reducing the load on the backend and improving response times for users. The system also pre-fetched pricing data on a daily basis to ensure that users had access to the latest market information without needing to make real-time API calls, which could be slow and unreliable.
+
+What tradeoffs or major architectural decisions did you make? (e.g. monolith vs microservices, Python vs another language)
+Python was chosen for the backend due to its ease of use and the availability of libraries for data processing and analytics. React was selected for the frontend to provide a responsive and dynamic user interface.
+The system was monolothic but the behavioral modules themselves were implemented as a seperate Python package. The intention was to eventually allow for the behavioral modules to be deployed as separate microservices, once the load on the system increased and the need for scaling became more pronounced. The decision to use a monolithic architecture was made to simplify development and deployment in the early stages of the project, while still allowing for future scalability.
+The decision to use Docker for containerization was made to simplify deployment and ensure consistency across development, testing, and production environments.
+
+🧠 Technical Execution
+Which parts of the stack did you personally build or heavily contribute to?
+I contributed heavily on all aspects of the platform: the front-end, backend and the behavioral module package. All final design and architecture decisions were made by me, and I implemented the majority of the codebase. I delegated some design decisions to the team and I had all developers document their design decisions in the codebase and signed-off on all decisions.
+
+Did you write any core libraries, frameworks, or tooling to enable your team?
+
+What CI/CD or observability practices did you put in place?
+I implemented a CI/CD pipeline using GitHub Actions to automate unit testing and deployment processes. This included running unit tests and deploying to production environments. I also set up basic logging and monitoring utilizing New Relic for observability, allowing us to track application performance and identify issues in real-time.
+
+📊 Data & Infra
+How was user data (like transactions or behavioral metrics) processed and stored?
+
+Were any machine learning or analytics systems involved?
+
+What cloud services or infrastructure patterns did you use (e.g. containers, serverless, autoscaling)?
+
+💬 Collaboration & Mentorship
+Did you provide architectural guidance or technical mentorship, even if not in a formal management capacity?
+I managed 
+
+How did you interact with product/design teams — did you help scope features or define technical constraints?
+
