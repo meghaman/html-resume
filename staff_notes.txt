@@ -1,3 +1,5 @@
+PoWS
+
 Architecture & System Design
 What were the core components of the platform? (e.g. services, data pipelines, frontend/backend separation)
 The backend was a dockerized web server written in Python. The web server managed user sign-up, login and modification. It also managed all integration with third-parties such as Hubspot, SendGrid and SnapTrade. It also provided the front-end with the endpoints for the behavioral analytics and investing workflow applications. We used Firebase as a database to store user data and analytics. The backend also provided a REST API for the frontend to interact with.
@@ -16,20 +18,48 @@ Which parts of the stack did you personally build or heavily contribute to?
 I contributed heavily on all aspects of the platform: the front-end, backend and the behavioral module package. All final design and architecture decisions were made by me, and I implemented the majority of the codebase. I delegated some design decisions to the team and I had all developers document their design decisions in the codebase and signed-off on all decisions.
 
 Did you write any core libraries, frameworks, or tooling to enable your team?
+I wrote the behavioral analytics library that was the primary core value of the company. It was able to ingest a users trading history and detect behavioral biases in their trading patterns. This library was designed to be modular and extensible, allowing for future enhancements and additional behavioral analytics features. It pulled pricing data from a yfinance in order to calculate the user's performance. The library heavily utilized Python's data processing libraries such as Pandas and NumPy for efficient data manipulation and analysis.
 
 What CI/CD or observability practices did you put in place?
 I implemented a CI/CD pipeline using GitHub Actions to automate unit testing and deployment processes. This included running unit tests and deploying to production environments. I also set up basic logging and monitoring utilizing New Relic for observability, allowing us to track application performance and identify issues in real-time.
 
-📊 Data & Infra
-How was user data (like transactions or behavioral metrics) processed and stored?
-
-Were any machine learning or analytics systems involved?
-
 What cloud services or infrastructure patterns did you use (e.g. containers, serverless, autoscaling)?
+The platform was hosted on Digital Ocean as a VPS, utilizing Docker for containerization. The backend and frontend services were deployed as separate Docker containers, allowing for easy scaling and management.
 
 💬 Collaboration & Mentorship
 Did you provide architectural guidance or technical mentorship, even if not in a formal management capacity?
-I managed 
+I directly managed a team of 3 developers, providing architectural guidance and technical mentorship throughout the project. I conducted regular code reviews, provided feedback on design decisions, and helped troubleshoot technical challenges. I also instituted the annual performance review process, where I provided feedback on the team's performance and helped set goals for their professional development. 
 
-How did you interact with product/design teams — did you help scope features or define technical constraints?
+Getty
 
+System Scope & Ownership
+What were the core systems or domains you owned or were most involved with?
+Senior Engineer for Getty's contributor submission platform, which ingests 99% of all contributor image submissions. Was built on Ruby on Rails. The API ingested hundres of thousands of images per day, processed them for metadata extraction, and provided endpoints for the front-end application to display and manage submissions.
+I was the App lead for the front-end application of the contributor submission platform, which was built using React and Typescript. The front-end application provided a user interface for contributors to submit images, manage their submissions, and view the status of their submissions. It also provided a user interface for Getty's internal teams to review and manage submissions.
+I was also part of the development team for the review tools application, which was built using React, Electron and Typescript. The review tools application provided a user interface for Getty's internal teams to review and manage submissions, as well as provide feedback to contributors.
+
+Did you have ownership over any architectural direction or long-term technical roadmap?
+
+
+Were there any particularly challenging engineering problems you solved?
+I improved the performance of the front-end of the contributor submission by utilizing pagespeed insights to identify and address performance bottlenecks. Specifically, I was able to identify issues in the application's bootstrapping process. The team was able to reduce the initial load time of the application by 50% by optimizing the bootstrapping process and reducing the number of unnecessary API calls made during the initial load. This significantly improved the user experience for contributors and internal teams. Identifying the specific API calls that could be deferred or eliminated during the initial load was a key part of this optimization process. This involved analyzing the application's data flow and understanding which data was essential for the initial user experience, and which data could be loaded asynchronously after the initial page load.
+
+🧱 Architecture & Technical Leadership
+How did you influence architectural decisions? Did you drive or propose platform-wide changes (e.g. migrations, service design, shared libraries)?
+
+What did the Angular-to-React migration involve at a technical level? (e.g. module refactoring, design system changes, performance optimization)
+
+🧪 Tooling, Quality, and Testing
+What improvements did you make to CI/CD, testing, or build tooling?
+
+Did you create any tooling or documentation to help the team adopt best practices or onboard more easily?
+
+🤝 Cross-Team Collaboration & Influence
+Did you contribute to any initiatives that spanned across teams? (e.g. hiring standards, guilds, frontend consistency)
+
+How did you work with product/design/data teams? Were you involved in defining scope, constraints, or tradeoffs?
+
+🧑‍🤝‍🧑 Mentorship and Team Impact
+Did you mentor or guide other engineers (beyond onboarding)? Any examples of helping people grow technically?
+
+Did you lead any working groups, engineering standards, or incident postmortems?
