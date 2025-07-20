@@ -38,28 +38,70 @@ Senior Engineer for Getty's contributor submission platform, which ingests 99% o
 I was the App lead for the front-end application of the contributor submission platform, which was built using React and Typescript. The front-end application provided a user interface for contributors to submit images, manage their submissions, and view the status of their submissions. It also provided a user interface for Getty's internal teams to review and manage submissions.
 I was also part of the development team for the review tools application, which was built using React, Electron and Typescript. The review tools application provided a user interface for Getty's internal teams to review and manage submissions, as well as provide feedback to contributors.
 
-Did you have ownership over any architectural direction or long-term technical roadmap?
-
-
 Were there any particularly challenging engineering problems you solved?
 I improved the performance of the front-end of the contributor submission by utilizing pagespeed insights to identify and address performance bottlenecks. Specifically, I was able to identify issues in the application's bootstrapping process. The team was able to reduce the initial load time of the application by 50% by optimizing the bootstrapping process and reducing the number of unnecessary API calls made during the initial load. This significantly improved the user experience for contributors and internal teams. Identifying the specific API calls that could be deferred or eliminated during the initial load was a key part of this optimization process. This involved analyzing the application's data flow and understanding which data was essential for the initial user experience, and which data could be loaded asynchronously after the initial page load.
+Senior engineers were expected to be on support rotation to handle production issues. I was able to quickly identify and resolve issues in the production environment, ensuring minimal downtime and disruption to the contributor submission process. This involved analyzing logs, debugging code, and collaborating with other team members to implement fixes. I personally identified a particular user who was sending a large number of submissions that were causing performance issues. I then spearheaded the implementation of a throttling mechanism to limit the number of submissions from a single user, which significantly improved the overall performance and stability of the platform. To determine the throttling levels I investigated the maximum throughput our system could handle using Siege to establish a solid estimate for rate-limiting. I also liasoned with the user to explain the changes and ensure they understood the new submission limits, which helped maintain a positive relationship with the contributor.
 
-🧱 Architecture & Technical Leadership
-How did you influence architectural decisions? Did you drive or propose platform-wide changes (e.g. migrations, service design, shared libraries)?
-
-What did the Angular-to-React migration involve at a technical level? (e.g. module refactoring, design system changes, performance optimization)
 
 🧪 Tooling, Quality, and Testing
 What improvements did you make to CI/CD, testing, or build tooling?
-
-Did you create any tooling or documentation to help the team adopt best practices or onboard more easily?
+I took the lead on the migration from react-scripts to Vite for the front-end build tooling. This migration significantly improved the build times and development experience for the team. The team initially struggled to implement the migration due to more junior developers implementing irrelevant dependency upgrades. The upgrade to Vite stalled due to the scope of the changes. I took the inititive on my own time to to investigate the issues and successfully complete the upgrade.
 
 🤝 Cross-Team Collaboration & Influence
 Did you contribute to any initiatives that spanned across teams? (e.g. hiring standards, guilds, frontend consistency)
+Overhauled the team's hiring process, from interview structure to candidate and interviewer
+guides, resulting in the successful recruitment of several top-performing engineers and improved overall
+interview consistency.
 
-How did you work with product/design/data teams? Were you involved in defining scope, constraints, or tradeoffs?
+KT 
 
-🧑‍🤝‍🧑 Mentorship and Team Impact
-Did you mentor or guide other engineers (beyond onboarding)? Any examples of helping people grow technically?
+System Design & Scope
+What was the architecture of the new kensigntontours.com site you led? (e.g., microservices, monolith, SSR/SPA, hosting details)
+The new kensigntontours.com site was migrated from .NET MVC to a modern stack using Angular v4.
 
-Did you lead any working groups, engineering standards, or incident postmortems?
+What parts of the stack did you directly contribute to (e.g., frontend/backend infra, API design, deployment)?
+I specifically implemented Redux for global state management. The implementation of Redux was incredibly valuable as it enabled a user to select a tour and have that selection persist across the entire site, enhancing the user experience significantly and increased overall lead generation and conversion rates (approximately 5% increase in leads generated).
+
+⚙️ Tooling & Quality
+Did you introduce or formalize any testing, CI/CD, or code quality standards?
+I was delegated to upgrade the client document PDF generator. The code was poorly written and difficult to maintain: Large class files, no unit tests, poorly coupled code, poor encapsulation, and no separation of concerns. I refactored the code to improve maintainability and readability, implemented unit tests to ensure code quality, and introduced a more modular design that allowed for easier future enhancements. This refactoring effort significantly improved the reliability of the PDF generation process and reduced the number of bugs in production. Additionally, the code was much easier for other developers to understand and work with, which improved overall team productivity. Initially, only one developer felt comfortable working on the PDF generator code due to its complexity. After the refactoring, the entire team was able to contribute to the PDF generation codebase (approximately 10 developers), which improved collaboration and knowledge sharing within the team.
+
+I implemented a CI/CD pipeline using Octopus Deploy and Teamcity to automate the deployment and build processes. The CI/CD pipeline significantly reduced deployment times and enabled the rest of the team to perform deployments without needing to rely on a single developer. This increased the team's overall efficiency and allowed for more frequent releases and updates to the application.
+
+Were there any performance, security, or scalability optimizations you made or recommended?
+I sucessfully migrated the production environment to a new multi-server, load balanced infrastructure, which significantly improved the performance and scalability of the application. This migration involved setting up multiple web servers behind a load balancer to distribute traffic evenly, ensuring that the application could handle increased user load without performance degradation. The new infrastructure also allowed for easier scaling in the future as user demand grew.
+
+📢 Collaboration & Communication
+Did you work directly with design, marketing, or SEO teams on requirements? If so, how did you ensure the technical implementation aligned with their goals?
+I worked directly the VP of marketing to implement 3rd party integrations, ensure 99% uptime for the lead generations forms, and implement SEO best practices. Our company was invited to a Google Hackathon event in New York City where we implemented Accelerated Mobile Pages (AMP) for the site, which significantly improved the site's performance on mobile devices and enhanced the user experience. The AMP implementation was a collaborative effort with the marketing team to ensure that the technical changes aligned with their goals for increased lead generation and improved user engagement. Our team of two won 2nd place in the hackathon, which was a testament to the effectiveness of our collaboration and the impact of the technical improvements we made.
+
+Was your real-time SSE bulletin system adopted beyond the hackathon? If so, how was it integrated or used?
+The real-time SSE bulletin system was not adopted beyond the hackathon. While it was a successful proof of concept during the event, the team decided to focus on other priorities and enhancements for the site that had a more immediate impact on user engagement and lead generation. The bulletin system was a great learning experience, but it did not align with the long-term goals of the project at that time.
+
+🧑‍🤝‍🧑 Mentorship & Team Impact
+Did you mentor or guide other developers during this time?
+I provided mentorship to junior developers on the team, helping them understand the new stack and best practices for Node development. I conducted code reviews, provided feedback on design decisions, and helped troubleshoot technical challenges. I was the key developer on all deployment and build processes. 
+
+
+What company and time period was this role?
+Ingram Micro cloud
+
+What was your official title? (e.g. Software Engineer, Senior Developer)
+Software Engineer
+
+What industry or product domain was the Cloud Marketplace part of? (e.g. SaaS, e-commerce, infrastructure)
+The Cloud Marketplace was part of the SaaS industry, specifically focused on providing a platform for software vendors to list and sell their applications and services.
+
+What tools or stacks were used on the Cloud Marketplace project? (same as KnockoutJS/.NET or different?)
+
+Were you the only developer on the Report Generator and Cost of Goods app, or working within a team?
+I was not the original developer on the Report Generator and Cost of Goods app, but I was the only developer working on the project at the time. I was responsible for maintaining and enhancing the existing codebase, as well as implementing new features and improvements.
+
+Did your work impact external customers or just internal stakeholders?
+Internal stake holders primarily, but the Report Generator and Cost of Goods app were used by internal teams to generate reports and manage costs, which indirectly impacted external customers by improving the overall efficiency and accuracy of the company's operations.
+
+Any specific metrics or achievements tied to your work? (e.g. reduced deployment time, increased reliability, reduced errors)
+I implemented unit tests for the Report Generator and Cost of Goods app, which significantly improved the reliability of the codebase. This reduced the number of bugs and errors in production, leading to a more stable and reliable application. The implementation of unit tests also improved the overall development process by allowing for faster identification and resolution of issues.
+
+If you filled in for the dev team manager — did that involve mentoring or performance feedback, or was it strictly reporting/standup duties?
+It was strictly reporting and standup duties. I did not have direct reports or provide performance feedback, but I did help facilitate the team's daily standups and ensure that the team was aligned on priorities and tasks.

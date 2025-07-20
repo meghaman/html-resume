@@ -12,7 +12,7 @@
   <section id="main">
     <header id="title">
       <h1>Murali Kulachandran</h1>
-      <span class="subtitle">Staff Software Engineer | Fintech Founder | Scalable Systems Expert</span>
+      <span class="subtitle">Staff Software Engineer | Fintech CTO | Scalable Systems Expert</span>
     </header>
     <section class="main-block concise">
       <h2>
@@ -25,10 +25,55 @@
         </div>
         <div class="details">
           <header>
-            Staff-level engineer with 10+ years of experience designing resilient, scalable systems across fintech and
-            media. Hands-on expertise in full-stack development, system architecture, and developer enablement. Proven
-            ability to drive technical strategy, mentor engineers, and ship high-impact features at scale. </span>
+            <span>Staff-level engineer with 10+ years of experience designing resilient, scalable systems across fintech
+              and media. Hands-on expertise in full-stack development, system architecture, and developer enablement.
+              Proven ability to drive technical strategy, mentor engineers, and ship high-impact features at
+              scale.</span>
           </header>
+        </div>
+      </section>
+    </section>
+    <section class="main-block">
+      <h2>
+        <i class="fa fa-star"></i> Founder Experience
+      </h2>
+      <section class="blocks">
+        <div class="date">
+          <span style="margin-right: -6px">Present</span><span>2020</span>
+        </div>
+        <div class="decorator"></div>
+        <div class="details">
+          <header>
+            <h3>CTO & Co-Founder</h3>
+            <span class="place">Prof of Wall Street</span>
+            <span class="location">Remote</span>
+          </header>
+          <div>
+            <ul>
+              <li>Led system design and hands-on implementation of a full-stack fintech platform offering behavioral
+                analytics and investment decision tools to traders and portfolio managers.</li>
+              <li>Architected and built a Dockerized Python backend serving a REST API for user management, third-party
+                integrations (e.g., HubSpot, SendGrid, SnapTrade), and behavioral analytics. Chose a monolithic
+                architecture for early-stage velocity, modularizing analytics components into a standalone Python
+                package with a clear migration path to microservices.</li>
+              <li>Developed the frontend using React and TypeScript, delivering responsive UIs for behavioral reporting,
+                an investing workflow engine, and user account management. Used RTK Query to cache analytics responses
+                client-side, reducing backend load and improving user experience.</li>
+              <li>Designed the analytics engine responsible for ingesting trading history and identifying behavioral
+                biases using Pandas and NumPy. Engine calculated performance metrics with historical pricing data from
+                yfinance and was built to be extensible with pluggable bias detection algorithms.</li>
+              <li>Deployed infrastructure to DigitalOcean with containerized services managed via Docker. Enabled
+                horizontal scaling of frontend and backend containers behind load balancers; implemented prefetching for
+                market data to reduce API latency.</li>
+              <li>Built and maintained CI/CD pipelines with GitHub Actions to automate test and deploy workflows;
+                integrated New Relic for monitoring and alerting across frontend and backend services.</li>
+              <li>Personally implemented the majority of the platform's codebase and provided technical oversight for a
+                small team of engineers. Conducted code reviews, approved system design decisions, and introduced an
+                internal design doc process to ensure architectural clarity and maintainability.</li>
+              <li>Drove architectural discussions, product scoping, and UX definition in close collaboration with
+                product and design stakeholders.</li>
+            </ul>
+          </div>
         </div>
       </section>
     </section>
@@ -38,43 +83,9 @@
       </h2>
       <section class="blocks">
         <div class="date">
-          <span style="margin-right: -6px">Present</span><span>2020</span>
-        </div>
-        <div class="decorator">
-        </div>
-        <div class="details">
-          <header>
-            <h3>CTO & Co-Founder</h3>
-            <span class="place">Prof of Wall Street</span>
-            <span class="location">Remote</span>
-          </header>
-          <div>
-            <ul>
-              <li>Led design and architecture of a containerized microservices platform processing real-time investor
-                behavior data using Python, Docker, and React.</li>
-              <li>Co-founded and led all technical initiatives at a fintech startup delivering behavioral analytics and
-                personalized financial services for traders and portfolio managers.</li>
-              <li>Defined and implemented the technical vision and architecture for a scalable, containerized web
-                platform that delivers real-time, investor behavior insights.</li>
-              <li>Recruited and managed a high-performing engineering team (hiring and mentoring 10 developers over 4
-                years), peaking at 4 concurrent team members.</li>
-              <li>Launched MVP within 6 months and grew platform to serve 100+ users, including portfolio managers
-                managing multi-million dollar portfolios.</li>
-              <li>Secured $100K in pre-seed funding and accepted into Creative Destruction Lab Accelerator, Curinos
-                Fintech Incubator</li>
-              <li>Oversaw cross-functional collaboration with product, marketing, and design teams to drive roadmap, UX,
-                and customer adoption.</li>
-              <li>Grew revenue to $2,000/month and delivered personalized investor reports to high-value clients across
-                Canada and the US.</li>
-          </div>
-        </div>
-      </section>
-      <section class="blocks">
-        <div class="date">
           <span>2025</span><span>2021</span>
         </div>
-        <div class="decorator">
-        </div>
+        <div class="decorator"></div>
         <div class="details">
           <header>
             <h3>Senior Software Engineer</h3>
@@ -83,28 +94,26 @@
           </header>
           <div>
             <ul>
-              <li>App lead for Getty's contributor submission platform, which ingests 99% of all contributor image
-                submissions. Oversaw full-stack development of React-based apps and internal tools used by thousands of
-                global contributors and reviewers.</li>
-              <li>Overhauled the team's hiring process, from interview structure to candidate and interviewer
-                guides, resulting in the successful recruitment of several top-performing engineers and improved overall
-                interview consistency.
-              </li>
-              <li>Led the complete migration of a legacy Angular 1.0 platform to a modern React and TypeScript stack,
-                significantly improving user experience and maintainability.</li>
-              <li>Collaborated closely with product managers to define technical requirements and write user stories
-                aligned with platform goals.</li>
-              <li>Spearheaded the design and implementation of an AI-based content tagging system to automatically flag
-                AI-generated or AI-modified images for human review.</li>
-              <li>Championed and led adoption of modern tooling including Vite (improving dev experience and build
-                performance)
-                and React Testing Library (RTL).</li>
-              <li>Paired regularly with junior developers to onboard them to the codebase and ensure consistency with
-                team development practices.</li>
-              <li>Conducted thorough code reviews and defined technical direction for frontend tooling and architecture.
-              </li>
-              <li>Recognized for outstanding contributions and selected to represent the team at the 2024 Grammy Awards.
-              </li>
+              <li>App lead for the contributor submission platform, which processes over 99% of all contributor image
+                uploads via a high-throughput Ruby on Rails backend and a React + TypeScript frontend. Personally led
+                architecture and implementation of frontend systems used by thousands of global contributors and
+                internal reviewers.</li>
+              <li>Improved initial page load time by 50% through targeted frontend performance audits using PageSpeed
+                Insights. Refactored the app’s bootstrap sequence, deferred non-critical API calls, and restructured the
+                data-fetching layer to prioritize render-critical content.</li>
+              <li>Spearheaded implementation of a rate-limiting and throttling system after diagnosing performance
+                degradation caused by abusive traffic patterns. Used load testing (Siege) to benchmark system capacity,
+                and collaborated with affected users to ensure transparency and continued platform trust.</li>
+              <li>Took initiative to complete a stalled migration from react-scripts to Vite, unlocking significant
+                improvements in build time and local development speed. Led investigation and resolution of incompatible
+                dependency issues, unblocking the team and modernizing the toolchain.</li>
+              <li>Contributed to internal Electron-based tooling used by Getty's review teams, enabling efficient
+                management and quality assurance of user-submitted content.</li>
+              <li>Served on support rotation, diagnosing and resolving production issues under pressure. Traced root
+                causes through logs and observability tools, implementing fixes with minimal downtime.</li>
+              <li>Led the redesign of the team’s hiring process—including interview structure, feedback rubrics, and
+                interviewer training—resulting in the recruitment of several high-performing engineers and improved
+                process consistency across the org.</li>
             </ul>
           </div>
         </div>
@@ -113,8 +122,7 @@
         <div class="date">
           <span>2021</span><span>2017</span>
         </div>
-        <div class="decorator">
-        </div>
+        <div class="decorator"></div>
         <div class="details">
           <header>
             <h3>Senior Software Engineer</h3>
@@ -123,37 +131,60 @@
           </header>
           <div>
             <ul>
-              <li>Acted as technical lead for the rebuild of kensingtontours.com, selecting the tech stack and
-                overseeing implementation across teams.</li>
-              <li>Initiated and led development of a real-time SSE bulletin system—won 1st prize and Most Completed
-                Award in a company hackathon.</li>
-              <li>Sole developer on a major refactor of the PDF generator using Clean Architecture and TDD, improving
-                test coverage to over 75%.</li>
-              <li>Coordinated migration to a new load-balanced production environment, minimizing business disruption.
-              </li>
-              <li>Liaised with marketing and analytics teams to improve SEO and lead acquisition strategies.</li>
-              <li>Recognized with the 2018 IT Top Performer Award; also chaired the company Social Committee, enhancing
-                internal culture.</li>
+              <li>Acted as technical lead on the rebuild of kensington­tours.com, migrating from a legacy .NET MVC
+                monolith to a modern Angular v4 SPA architecture. Introduced Redux for global state management to
+                persist user-selected tours across pages—boosting conversion rates and increasing lead generation by
+                ~5%.</li>
+              <li>Collaborated with the VP of Marketing to ensure 99% uptime of lead generation forms, implement SEO
+                best practices, and integrate third-party analytics and marketing platforms. Co-led a Google-hosted
+                hackathon in NYC where the team placed 2nd by implementing Accelerated Mobile Pages (AMP), improving
+                mobile performance and engagement.</li>
+              <li>Refactored the legacy PDF generation system, which was previously brittle and difficult to maintain.
+                Introduced modular design, unit testing, and separation of concerns—transforming it into a maintainable
+                codebase that the full team could contribute to. Post-refactor, contribution expanded from 1 developer
+                to 10+.</li>
+              <li>Designed and implemented CI/CD pipelines using TeamCity and Octopus Deploy, automating build and
+                deployment workflows. Reduced deployment friction, empowered team-wide ownership of release processes,
+                and enabled faster iteration.</li>
+              <li>Successfully led a migration to a multi-server, load-balanced production environment, increasing
+                platform performance and scalability. Designed infrastructure to support future traffic growth while
+                minimizing risk during deployment.</li>
+              <li>Provided mentorship to junior developers during the tech stack transition. Conducted code reviews,
+                enforced best practices in Node and Angular, and helped level up team capabilities through architectural
+                guidance and paired debugging.</li>
             </ul>
           </div>
         </div>
       </section>
       <section class="blocks">
         <div class="date">
-          <span>2017</span><span>2009</span>
+          <span>2017</span><span>2015</span>
         </div>
-        <div class="decorator">
-        </div>
+        <div class="decorator"></div>
         <div class="details">
           <header>
-            <h3>Previous Experiences</h3>
+            <h3>Software Engineer</h3>
+            <span class="place">Ingram Micro Cloud</span>
+            <span class="location">Toronto, ON</span>
           </header>
-          <div style="margin-top: 2px !important;">
-            <ul style="margin-top: 2px !important;">
-              <li>Gained full-stack development experience across agencies, non-profits, and large-scale organizations
-                clients using
-                .NET, PHP, and JavaScript. Full professional history available upon request.
+          <div>
+            <ul>
+              <li>Sole engineer responsible for maintaining and enhancing the internal Report Generator and Cost of
+                Goods application, used to support pricing operations and financial reporting. Implemented new features,
+                stabilized legacy code, and significantly improved test coverage using unit tests to reduce production
+                defects.</li>
+              <li>Modernized core components of the application using KnockoutJS, ASP.NET WebAPI, and Unity for
+                dependency injection, resulting in improved maintainability and faster development velocity for new
+                features.</li>
+              <li>Contributed to the development and support of the Cloud Marketplace, a SaaS platform enabling
+                third-party vendors to distribute and sell cloud software. Built internal tools to support the platform
+                team in configuring and managing listings, entitlements, and pricing models.</li>
+              <li>Frequently appointed Deployment Lead, responsible for coordinating release activities, managing
+                developer checklists, auditing task completion, and communicating deployment timelines to stakeholders.
               </li>
+              <li>Acted as stand-in for the development manager during weekly departmental meetings and
+                standups—facilitating sprint updates, aligning team progress, and ensuring communication across
+                engineering and product teams.</li>
             </ul>
           </div>
         </div>
@@ -167,8 +198,7 @@
         <div class="date">
           <span>2009</span><span>2004</span>
         </div>
-        <div class="decorator">
-        </div>
+        <div class="decorator"></div>
         <div class="details">
           <header>
             <h3>Bachelor of Software Engineering</h3>
@@ -197,7 +227,7 @@
         Technical Skills
       </h2>
       <h3>Languages & Frameworks</h3>
-      <ul class="bulleted-list" z>
+      <ul class="bulleted-list">
         <li>TypeScript / Javascript</li>
         <li>React, Angular, NodeJS, Electron, Cypress, RTL</li>
         <li>Python, Flask</li>
@@ -214,25 +244,6 @@
         <li>New Relic</li>
         <li>Teamcity</li>
         <li>Octopus Deploy</li>
-      </ul>
-    </div>
-    <div class="side-block" id="skills">
-      <h2>
-        Key Projects
-      </h2>
-      <h3>Behavioral Finance Analysis Engine</h3>
-      <ul class="bulleted-list">
-        <li>Containerized microservice platform</li>
-        <li>Processed user transaction data in real time</li>
-        <li>Identified behavioral biases and delivered personalized insights</li>
-        <li>Python, Docker</li>
-      </ul>
-      <h3>Investing Insights Website</h3>
-      <ul class="bulleted-list">
-        <li><a href="https://app.profofwallstreet.com" target="_blank">https://app.profofwallstreet.com</a></li>
-        <li>Surfaces behavioral insights</li>
-        <li>Investing workflow tool</li>
-        <li>Typescript, React</li>
       </ul>
     </div>
   </aside>
