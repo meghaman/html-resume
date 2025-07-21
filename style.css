@@ -30,8 +30,8 @@
 }
 
 body{
+  height: calc(var(--page-height) * 2);
   width: var(--page-width);
-  height: var(--page-height);
   margin: 0;
   font-family: "Open Sans", sans-serif; 
   font-weight: 300;
@@ -54,18 +54,20 @@ a{
   color: inherit;
 }
 
+#container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 #main{
-  float: left;
-  width: var(--main-width);
+  flex: 1; /* Allow #main to take up remaining space */
   padding: 0.25in 0.25in 0 0.25in;
   font-size: 8.5pt;
 }
 
 #sidebar{
-  float: right;
-  position: relative; /* for disclaimer */
-  width: var(--sidebar-width);
-  height: 100%;
+  flex: 0 0 var(--sidebar-width); /* Sidebar retains its width */
   padding: 0.6in var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
   font-size: 8.5pt;
