@@ -1,6 +1,8 @@
-@page{
-  size: letter portrait;
-  margin: 0;
+@media print {
+  @page{
+    size: letter portrait;
+    margin-top: 0.5in;
+  }
 }
 
 *{
@@ -195,6 +197,11 @@ a{
   width: 2pt;
   min-height: 100%;
   border-left: var(--decorator-border);
+}
+
+.break-before {
+  page-break-before: always;
+  break-before: always;
 }
 
 /*
