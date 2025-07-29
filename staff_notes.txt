@@ -105,3 +105,25 @@ I implemented unit tests for the Report Generator and Cost of Goods app, which s
 
 If you filled in for the dev team manager — did that involve mentoring or performance feedback, or was it strictly reporting/standup duties?
 It was strictly reporting and standup duties. I did not have direct reports or provide performance feedback, but I did help facilitate the team's daily standups and ensure that the team was aligned on priorities and tasks.
+
+What problem does your platform solve that others don’t?
+
+How does your approach to behavioral analytics differ from traditional investing tools?
+
+Were there any novel insights or frameworks (e.g. proprietary behavioral models) the product offered?
+
+⚙️ Technical Depth
+What made the system technically challenging to build? (e.g. real-time processing, analytics complexity, integrations?)
+
+How did the architecture position the platform for scale, reliability, or extensibility?
+
+📈 Business & Competitive Edge
+Did you achieve any traction (users, revenue, funding, partnerships)?
+
+Was this a first-of-its-kind product or were you competing with legacy systems?
+
+🧠 Strategic Vision
+Was there anything about your vision (e.g. blending coaching + software, making finance more human) that stood out?
+
+How would an investor or tech lead describe what made the platform impressive?
+

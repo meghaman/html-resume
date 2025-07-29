@@ -65,14 +65,14 @@ a{
 #main{
   flex: 1; /* Allow #main to take up remaining space */
   padding: 0.25in 0.25in 0 0.25in;
-  font-size: 8.5pt;
+  font-size: 11pt;
 }
 
 #sidebar{
   flex: 0 0 var(--sidebar-width); /* Sidebar retains its width */
   padding: 0.6in var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
-  font-size: 8.5pt;
+  font-size: 11pt;
 }
 
 /* main */
