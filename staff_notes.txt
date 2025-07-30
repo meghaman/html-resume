@@ -107,23 +107,24 @@ If you filled in for the dev team manager — did that involve mentoring or perf
 It was strictly reporting and standup duties. I did not have direct reports or provide performance feedback, but I did help facilitate the team's daily standups and ensure that the team was aligned on priorities and tasks.
 
 What problem does your platform solve that others don’t?
+behavioral biases are invisible to investors. Other companies address the problem with consulting but that results in very subjective changes as user's will say they do one thing but then do something else. Our platform is able to objectively measure a user's behavioral biases by analyzing their trading history and providing personalized insights and recommendations. We are quantitative and our technology is steeped in the science of behavioral finance. The algorithms, although complex, are surfaced to the user in a user-friendly manner.
 
 How does your approach to behavioral analytics differ from traditional investing tools?
+We focus more on active investing rather than simply asset selection. Most investing tools focus on portfolio management and asset selection, but we go beyond that by analyzing a user's trading behavior and providing insights into their decision-making processes. Our platform helps users understand their own biases and behaviors, which can lead to more informed and rational investment decisions.
 
 Were there any novel insights or frameworks (e.g. proprietary behavioral models) the product offered?
+We are able to diagnose and quatifiable measure the affect of the disposition effect, loss chasing, and mental accounting.
 
 ⚙️ Technical Depth
 What made the system technically challenging to build? (e.g. real-time processing, analytics complexity, integrations?)
+Analytifcs complexity. Biases are difficult to describe and require a deep understanding of behavioral finance. Additionally, there is a great deal of complexity in the coding the accounting side of the biases: determining ACB, calculating performance of complex portfolios, dealing with nuances of asset pricing such as stock splits and delisted. Additionally, the system needs to process the data in a reasonable amount of time since the user expects to see their results in a timely manner. This required careful optimization of the algorithms and data processing pipelines to ensure that the system could handle large volumes of data efficiently.
 
 How did the architecture position the platform for scale, reliability, or extensibility?
-
-📈 Business & Competitive Edge
-Did you achieve any traction (users, revenue, funding, partnerships)?
+The behavioral modules were originally part of the web server monolith but were later extracted into a separate Python package. This allowed for better separation of concerns and made it easier to scale the behavioral analytics independently from the rest of the platform. The package was designed to be modular and extensible, allowing for future enhancements and additional behavioral analytics features without impacting the core platform.
 
 Was this a first-of-its-kind product or were you competing with legacy systems?
+First-of-its-kind product.
 
 🧠 Strategic Vision
-Was there anything about your vision (e.g. blending coaching + software, making finance more human) that stood out?
-
 How would an investor or tech lead describe what made the platform impressive?
-
+A tech lead would describe the modules and extensible, well-tested and readable. Although the algorithms were complex they were built to be modifiable to deal with new edge cases. Additiionally, new developers were able to quickly onboard and understand the codebase due to strong unit testing and modular design.
